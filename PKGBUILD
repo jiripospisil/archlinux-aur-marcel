@@ -17,9 +17,13 @@ makedepends=(
 license=('GPL-3.0-only')
 b2sums=('1280fa056b3e16347e260f8f7bcc60ae026295ceea3c14dc0da0bd3a99d79c97cc9df90d7be4c3e01f3c9bfcfc2c9c03cf17d677a12ffe7edd022e568d377334')
 
-build() {
+prepare() {
   cd marcel-"$pkgver"
   rm -rf 'test'
+}
+
+build() {
+  cd marcel-"$pkgver"
   python -m build --wheel --no-isolation
 }
 
