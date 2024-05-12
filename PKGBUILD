@@ -1,7 +1,7 @@
 # Maintainer: Jiri Pospisil <jiri@jpospisil.com>
 
 pkgname=marcel
-pkgver=0.25.0
+pkgver=0.27.0
 pkgrel=1
 pkgdesc='A modern shell'
 url='https://github.com/geophile/marcel'
@@ -15,7 +15,7 @@ makedepends=(
   'python-setuptools'
 )
 license=('GPL-3.0-only')
-b2sums=('fc3ce2083f74c50a84454da8a4eb18520de6d9a1cc18a1ef8c3425c0c5c0f9f18b8e64ca014d9e21fc880a97d455778d84a0e46bd937298f39fac17160953db5')
+b2sums=('20151094ca82f8adc87af31a582d1affc67cac223e74e1433748c9dbf06cbc9808e4e66d5506c990e9cb54810915ce069a0d2012df4f96c6c78abe159364ee0d')
 
 prepare() {
   cd marcel-"$pkgver"
